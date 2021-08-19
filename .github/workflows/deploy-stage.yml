@@ -1,4 +1,4 @@
-name: deploy-to-eb
+name: deploy-to-stage
 
 on:
   push:
