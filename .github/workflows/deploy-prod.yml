@@ -1,7 +1,7 @@
 name: deploy-to-eb
 
 on:
-  push:
+  create:
     branches:
       - master
     tags:
