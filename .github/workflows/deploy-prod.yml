@@ -15,7 +15,9 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
-      - run: echo "Tag is ${{ github.ref }}"
+      - name: Show tag
+        run: echo "Tag is ${{ github.ref }}"
+
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
 
